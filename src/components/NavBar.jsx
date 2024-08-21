@@ -69,9 +69,9 @@ export const NavBarComponent = () => {
             <span className="navbar-text">
               <SocialIconsComponent />
               <HashLink
-                onClick={() =>
-                  (window.location.href = "mailto:shivamtayal14@gmail.com")
-                }
+                onClick={() => {
+                  window.open("mailto:shivamtayal14@gmail.com", "_blank");
+                }}
               >
                 <button className="vvd">
                   <span>Let’s Connect</span>

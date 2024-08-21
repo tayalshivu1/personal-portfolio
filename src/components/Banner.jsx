@@ -67,7 +67,7 @@ export const BannerComponent = () => {
             <p>{description3}</p>
             <button
               onClick={() =>
-                (window.location.href = "mailto:shivamtayal14@gmail.com")
+                window.open("mailto:shivamtayal14@gmail.com", "_blank")
               }
             >
               Let's Connect <ArrowRightCircle size={25} />
