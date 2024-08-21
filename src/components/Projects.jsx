@@ -1,6 +1,7 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import ticTacToe from "../assets/img/tic-tac-toe.png";
+import foodOrderApp from "../assets/img/food-order-app.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import TrackVisibility from "react-on-screen";
 
@@ -11,6 +12,12 @@ export const ProjectsComponent = () => {
       description: "Its a basic tic tac toe game.",
       imgUrl: ticTacToe,
       projectUrl: "https://tayalshivu1.github.io/TicTacToe/",
+    },
+    {
+      title: "Food Order App",
+      description: "Food Order app",
+      imgUrl: foodOrderApp,
+      projectUrl: "https://food-order-app-react-two.vercel.app/",
     },
   ];
 
