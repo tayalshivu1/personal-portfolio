@@ -33,7 +33,7 @@ export const SkillsComponent = () => {
             <div className="skill-bx wow zoomIn">
               <h2>Skills</h2>
               <p>
-                Frontend Developer | React | Angular | HTML | CSS | JavaScript |
+                React | Angular | Node | Express | MongoDB | JavaScript |
                 TypeScript
               </p>
               <Carousel
