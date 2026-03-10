@@ -42,35 +42,35 @@ export const SkillsComponent = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="react" />
                   <h5>ReactJs</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="angular" />
                   <h5>Angular</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="node" />
                   <h5>NodeJs</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="express" />
                   <h5>ExpressJs</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="mongo" />
                   <h5>MongoDB</h5>
                 </div>
                 <div className="item">
-                  <img src={meter1} alt="Image" />
+                  <img src={meter1} alt="html/css" />
                   <h5>HTML/CSS</h5>
                 </div>
                 <div className="item">
-                  <img src={meter2} alt="Image" />
+                  <img src={meter2} alt="js" />
                   <h5>Javascript</h5>
                 </div>
                 <div className="item">
-                  <img src={meter3} alt="Image" />
+                  <img src={meter3} alt="ts" />
                   <h5>Typescript</h5>
                 </div>
               </Carousel>
@@ -78,7 +78,7 @@ export const SkillsComponent = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="background" />
     </section>
   );
 };

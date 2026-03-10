@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 const description1 =
   "Full-stack JavaScript developer experienced in building scalable web applications using modern technologies including React, Angular, Node.js, Express, and MongoDB. Skilled in developing robust front-end interfaces as well as designing and implementing efficient backend services and APIs that power modern web applications.";
@@ -15,20 +15,9 @@ export const BannerComponent = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ["Web Developer"];
   const period = 2000;
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-
-    return () => {
-      clearInterval(ticker);
-    };
-  }, [text]);
-
-  const tick = () => {
+  const tick = useCallback(() => {
+    const toRotate = ["Web Developer"];
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     console.log("full text", fullText);
@@ -50,7 +39,18 @@ export const BannerComponent = () => {
       setLoopNum(loopNum + 1);
       setDelta(500);
     }
-  };
+  },[isDeleting,loopNum,text.length]);
+  
+  useEffect(() => {
+    let ticker = setInterval(() => {
+      tick();
+    }, delta);
+    
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [text,delta,tick]);
+  
 
   return (
     <section className="banner" id="home">
