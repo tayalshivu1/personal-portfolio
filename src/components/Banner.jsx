@@ -4,11 +4,11 @@ import headerImg from "../assets/img/header-img.svg";
 import { useEffect, useState } from "react";
 
 const description1 =
-  "With 3+ years of experience in frontend development, I bring a robust skill set and a passion for creating dynamic, user-centric web applications. My expertise spans modern JavaScript frameworks including React and Angular, allowing me to build seamless and interactive interfaces.";
+  "Full-stack JavaScript developer experienced in building scalable web applications using modern technologies including React, Angular, Node.js, Express, and MongoDB. Skilled in developing robust front-end interfaces as well as designing and implementing efficient backend services and APIs that power modern web applications.";
 const description2 =
-  "Proficient in HTML, CSS, and TypeScript, I ensure that my designs are not only visually appealing but also maintainable and scalable. My background in JavaScript empowers me to implement complex functionality with clean and efficient code.";
+  "Proficient in JavaScript, TypeScript, HTML, and CSS, with strong experience building component-driven user interfaces, integrating RESTful APIs, and developing server-side applications using Node.js and Express. Comfortable working across the full application stack to build maintainable, scalable, and high-performance solutions.";
 const description3 =
-  "I thrive on transforming concepts into engaging digital experiences, and I am committed to continuous learning and adaptation to new technologies. Let’s collaborate to bring your next project to life with precision and creativity.";
+  "Passionate about translating ideas into reliable digital products and continuously expanding expertise across the modern JavaScript ecosystem. Committed to writing clean, efficient code and delivering end-to-end solutions that provide seamless user experiences and robust backend functionality.";
 
 export const BannerComponent = () => {
   const [loopNum, setLoopNum] = useState(0);

@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import ticTacToe from "../assets/img/tic-tac-toe.png";
 import foodOrderApp from "../assets/img/food-order-app.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
+import todoListApp from "../assets/img/todo-list.png"
 import TrackVisibility from "react-on-screen";
 
 export const ProjectsComponent = () => {
@@ -15,10 +16,16 @@ export const ProjectsComponent = () => {
     },
     {
       title: "Food Order App",
-      description: "Food Order app",
+      description: "Food Order App",
       imgUrl: foodOrderApp,
       projectUrl: "https://food-order-app-react-two.vercel.app/",
     },
+    {
+      title: "Todo List App",
+      description: "Todo List App",
+      imgUrl: todoListApp,
+      projectUrl:"https://todo-list-react-vercel.vercel.app/"
+    }
   ];
 
   return (

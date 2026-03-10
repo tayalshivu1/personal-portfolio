@@ -8,7 +8,6 @@ import colorSharp from "../assets/img/color-sharp.png";
 export const SkillsComponent = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5,
     },
@@ -49,6 +48,18 @@ export const SkillsComponent = () => {
                 <div className="item">
                   <img src={meter1} alt="Image" />
                   <h5>Angular</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Image" />
+                  <h5>NodeJs</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Image" />
+                  <h5>ExpressJs</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Image" />
+                  <h5>MongoDB</h5>
                 </div>
                 <div className="item">
                   <img src={meter1} alt="Image" />
