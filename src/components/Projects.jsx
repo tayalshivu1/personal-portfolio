@@ -1,9 +1,9 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import ticTacToe from "../assets/img/tic-tac-toe.png";
-import foodOrderApp from "../assets/img/food-order-app.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
-import todoListApp from "../assets/img/todo-list.png"
+import todoListApp from "../assets/img/todo-list.png";
+import aiAssistant from "../assets/img/ai-assistant.png";
 import TrackVisibility from "react-on-screen";
 
 export const ProjectsComponent = () => {
@@ -15,17 +15,18 @@ export const ProjectsComponent = () => {
       projectUrl: "https://tayalshivu1.github.io/TicTacToe/",
     },
     {
-      title: "Food Order App",
-      description: "Food Order App",
-      imgUrl: foodOrderApp,
-      projectUrl: "https://food-order-app-react-two.vercel.app/",
-    },
-    {
       title: "Todo List App",
       description: "Todo List App",
       imgUrl: todoListApp,
-      projectUrl:"https://todo-list-react-vercel.vercel.app/"
-    }
+      projectUrl: "https://todo-list-react-vercel.vercel.app/",
+    },
+    {
+      title: "AI Powered Assistant",
+      description:
+        "AI-powered developer assistant that explains code and answers programming questions using LLM APIs. Built with React, Node.js, and Groq AI with markdown rendering and syntax highlighting.",
+      imgUrl: aiAssistant,
+      projectUrl: "https://ai-code-assistant-flame.vercel.app/",
+    },
   ];
 
   return (
@@ -56,7 +57,11 @@ export const ProjectsComponent = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2} alt="background"></img>
+      <img
+        className="background-image-right"
+        src={colorSharp2}
+        alt="background"
+      ></img>
     </section>
   );
 };

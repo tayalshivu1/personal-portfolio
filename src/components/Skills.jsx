@@ -1,84 +1,66 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
+import "../App.css";
 
 export const SkillsComponent = () => {
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-
   return (
     <section className="skill" id="skills">
       <div className="container">
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              <h2>Skills</h2>
-              <p>
-                React | Angular | Node | Express | MongoDB | JavaScript |
-                TypeScript
-              </p>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="owl-carousel owl-theme skill-slider"
-              >
-                <div className="item">
-                  <img src={meter1} alt="react" />
-                  <h5>ReactJs</h5>
+              {/* <h2>Skills</h2> */}
+              <div className="skills">
+                <div className="skills-wrapper">
+                  <div className="skill-bx wow zoomIn">
+                    <h2>Frontend</h2>
+                  </div>
+                  <p className="skills-section">
+                    React | Angular | JavaScript (ES6+) | TypeScript | HTML5 |
+                    CSS3 | Tailwind CSS
+                  </p>
                 </div>
-                <div className="item">
-                  <img src={meter1} alt="angular" />
-                  <h5>Angular</h5>
+                <div>
+                  <div className="skill-bx wow zoomIn">
+                    <h2>Backend</h2>
+                  </div>
+                  <p>
+                    Node.js | Express.js | REST API Development | Authentication
+                    (JWT)
+                  </p>
                 </div>
-                <div className="item">
-                  <img src={meter1} alt="node" />
-                  <h5>NodeJs</h5>
+                <div>
+                  <div className="skill-bx wow zoomIn">
+                    <h2>Database</h2>
+                  </div>
+                  <p>MongoDB | Mongoose </p>
                 </div>
-                <div className="item">
-                  <img src={meter1} alt="express" />
-                  <h5>ExpressJs</h5>
+                <div>
+                  <div className="skill-bx wow zoomIn">
+                    <h2>AI / LLM</h2>
+                  </div>
+                  <p>
+                    {" "}
+                    LLM API Integration | Prompt Engineering | Groq API |
+                    AI-assisted developer tools
+                  </p>
                 </div>
-                <div className="item">
-                  <img src={meter1} alt="mongo" />
-                  <h5>MongoDB</h5>
+                <div>
+                  <div className="skill-bx wow zoomIn">
+                    <h2>Tools</h2>
+                  </div>
+                  <p>Git | GitHub | Vercel | Render | Postman | VS Code</p>
                 </div>
-                <div className="item">
-                  <img src={meter1} alt="html/css" />
-                  <h5>HTML/CSS</h5>
-                </div>
-                <div className="item">
-                  <img src={meter2} alt="js" />
-                  <h5>Javascript</h5>
-                </div>
-                <div className="item">
-                  <img src={meter3} alt="ts" />
-                  <h5>Typescript</h5>
-                </div>
-              </Carousel>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="background" />
+      <img
+        className="background-image-left"
+        src={colorSharp}
+        alt="background"
+      />
     </section>
   );
 };
