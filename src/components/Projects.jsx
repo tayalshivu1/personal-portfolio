@@ -18,7 +18,8 @@ export const ProjectsComponent = () => {
       title: "Todo List App",
       description: "Todo List App",
       imgUrl: todoListApp,
-      projectUrl: "https://todo-list-react-vercel.vercel.app/",
+      projectUrl:
+        "http://todo-list-react-kv9vo62or-shivam-tayals-projects.vercel.app/",
     },
     {
       title: "AI Powered Assistant",

@@ -9,7 +9,6 @@ export const SkillsComponent = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx wow zoomIn">
-              {/* <h2>Skills</h2> */}
               <div className="skills">
                 <div className="skills-wrapper">
                   <div className="skill-bx wow zoomIn">
