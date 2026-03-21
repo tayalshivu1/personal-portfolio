@@ -4,6 +4,7 @@ import ticTacToe from "../assets/img/tic-tac-toe.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import todoListApp from "../assets/img/todo-list.png";
 import aiAssistant from "../assets/img/ai-assistant.png";
+import expenseTracker from "../assets/img/expense-tracker.png";
 import TrackVisibility from "react-on-screen";
 
 export const ProjectsComponent = () => {
@@ -27,6 +28,13 @@ export const ProjectsComponent = () => {
         "AI-powered developer assistant that explains code and answers programming questions using LLM APIs. Built with React, Node.js, and Groq AI with markdown rendering and syntax highlighting.",
       imgUrl: aiAssistant,
       projectUrl: "https://ai-code-assistant-flame.vercel.app/",
+    },
+    {
+      title: "Expense tracker app",
+      description:
+        "Created a full-stack MERN expense tracker with authentication, transaction management, and real-time dashboard updates. Implemented pagination, filtering, and responsive UI for a seamless user experience.",
+      imgUrl: expenseTracker,
+      projectUrl: "https://expense-tracker-mern-kit6.vercel.app/",
     },
   ];
 
